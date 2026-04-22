@@ -1,0 +1,9 @@
+__pycache__/
+
+.venv/
+
+/.env
+
+webhook_hub_syllabus.md
+
+GEMINI.md
