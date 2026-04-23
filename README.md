@@ -28,7 +28,7 @@ curl -X POST http://localhost:8000/webhook \
   -H "Content-Type: application/json" \
   -H "X-GitHub-Event: ping" \
   -H "X-GitHub-Delivery: test-123" \
-  -H "X-Hub-Signature-256: sha256=12140a7cf5b7a1262d3a95c96b797171e0dbb88e146ddaf41793740db3d726b0" \
+  -H "X-Hub-Signature-256: sha256=74ba25a76edf3da29d88cc00b987247117890cbbc43bfeb30e2595c9f4f4ded9" \
   -d '{"zen": "Non-blocking is better than blocking."}'
 ```
 
@@ -38,7 +38,7 @@ $headers = @{
     "Content-Type" = "application/json"
     "X-GitHub-Event" = "ping"
     "X-GitHub-Delivery" = "test-123"
-    "X-Hub-Signature-256" = "sha256=12140a7cf5b7a1262d3a95c96b797171e0dbb88e146ddaf41793740db3d726b0"
+    "X-Hub-Signature-256" = "sha256=74ba25a76edf3da29d88cc00b987247117890cbbc43bfeb30e2595c9f4f4ded9"
 }
 $body = '{"zen": "Non-blocking is better than blocking."}'
 Invoke-RestMethod -Uri "http://localhost:8000/webhook" -Method POST -Headers $headers -Body $body
