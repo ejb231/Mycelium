@@ -29,7 +29,7 @@ async def get_webhook(request: Request, db: AsyncSession = Depends(get_db)):
         secret_header = request.headers.get("x-hub-signature-256")
 
         # Verify signiture
-        if not verify_signiture(raw_body, settings.secret, secret_header):
+        if not verify_signiture(raw_body, settings.github_secret, secret_header):
             logger.warning("Invalid signiture attempt")
             raise HTTPException(status_code=403, detail="Invalid signiture")
 
