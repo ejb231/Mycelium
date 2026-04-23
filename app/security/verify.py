@@ -8,6 +8,6 @@ def verify_signiture(payload_body: bytes, secret: str, recieved_signiture: str) 
         key=secret.encode("utf-8"), msg=payload_body, digestmod=hashlib.sha256
     )
 
-    expected_signiture = f"sha1:{computed}"
+    expected_signiture = f"sha256={computed.hexdigest()}"
 
     return hmac.compare_digest(recieved_signiture, expected_signiture)

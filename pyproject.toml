@@ -3,7 +3,7 @@ name = "Mycelium"
 version = "0.1.0"
 description = "A webhook telemetry hub for GitHub events"
 authors = [
-    { name = "Kate Petrov", email = "[EMAIL_ADDRESS]" }
+    { name = "Ewan" }
 ]
 requires-python = ">=3.10"
 dependencies = [
