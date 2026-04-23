@@ -18,7 +18,7 @@ This will:
 
 ## Testing locally
 
-You can test the endpoint without setting up a real GitHub webhook or ngrok. I pre-calculated a signature for a test payload using the dummy secret in the docker-compose file.
+You can test the endpoint without setting up a real GitHub webhook or a tunneling service. I pre-calculated a signature for a test payload using the dummy secret in the docker-compose file.
 
 Run this in another terminal:
 
