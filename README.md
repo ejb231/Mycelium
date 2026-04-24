@@ -52,3 +52,8 @@ You should get a `{"status": "received"}` response back.
 - SQLAlchemy + Alembic
 - uv (for fast dependency management)
 - Docker
+
+## To-do
+- REST API
+- Frontend dashboard
+- Rate limiting
